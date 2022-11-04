@@ -8,7 +8,7 @@
             "name": "Launch Chrome",
             "request": "launch",
             "type": "chrome",
-            "url": "http://localhost/Pokemons_OriolAntras/index.php",
+            "url": "http://localhost/Pokemons_OriolAntras/indexFiles/index.php",
             "webRoot": "${workspaceFolder}"
         },
         {

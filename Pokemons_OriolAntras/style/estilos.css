@@ -1,0 +1,98 @@
+.fRight
+{
+    float: right;
+    
+}
+.paldiv1{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+}
+.paldiv2{
+        width:130px;
+        height:130px;
+        position: absolute;
+        
+}
+.Planta{
+    background: #78C850;
+}
+.Veneno
+{
+    background: #A040A0;
+}
+.Fuego{
+    background: #F08030 ;
+}
+.Volador{
+    background: #A890F0;
+}
+.Agua{
+    background: #188BE0 ;
+}
+
+.Electrico{
+    background: #F8D030;
+}
+
+.Hada{
+    background: #EE99AC;
+}
+
+.Bicho{
+    background:#A8B820 ;
+}
+
+.Lucha{
+    background: #C03028;
+}
+
+.Psiquico{
+    background: #F85888 ;
+}
+
+.Border
+{
+    border: sec;
+}
+.ColorFooterCards{
+    background: #F7F7F7;
+    
+}
+.fr{
+    float:right;
+    margin-right: 3px;
+}
+.nombrePk{
+    text-decoration: solid;
+}
+
+.marginbud{
+    margin: 3px;
+}
+.marginCard{
+    margin:3px;
+    margin-top: 20px;
+}
+
+.bodyFondo2 {
+    background-image: url('../media/pokemonspagewallpaper.jpg');
+    background-repeat: repeat;
+    
+  }
+
+.BotonDerecha{
+    float: right;
+    margin-right: 10px;
+}
+
+.centerText{
+    text-align: center;
+}
+.bodypokemons{
+    vertical-align: middle;
+    
+}

@@ -4,65 +4,105 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Pokemons Uristoteles</title>
-    
+    <link rel='stylesheet'  href='/Pokemons_OriolAntras/UI/bootstrap-5.1.3-dist/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../style/estilos.css">
+    <script src='/Pokemons_OriolAntras/UI/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js'></script>
 </head>
 
-<body>   
-    <form>
-        <label for="NumeroId">Numero:</label>
-        <input type="text" id="NumeroId" maxlength="3" placeholder="ID del Pokemon" autofocus><br>
+<body class="bodypokemons">   
+<div class="container">
+    <div class="card mx-auto">
+        <div class="card-header">   
+            <h5><img src="../media/pokebola.png" alt="" width="50" height="50">Pokemon</h5>
+        </div>
+        <div class="card-body">
+            
+            <form>
+                <div class="input-group mb-3">
+                    <label for="NumeroId" class="form-label col-sm-2" >Numero:</label>
+                    <div class="col-sm-10">
+                    <input type="text" id="NumeroId" maxlength="3" placeholder="ID del Pokemon " class="form-control" autofocus>
+                    </div>
+                </div>
 
-        <label for="NombreId">Nombre:</label>
-        <input type="text" id="NombreId" placeholder="Nombre del Pokemon"> <br>
+                <div class="input-group mb-3">
+                    <label class="col-sm-2" for="NombreId">Nombre:</label>
+                    <div class="col-sm-10">
+                    <input class="form-control" type="text" id="NombreId" placeholder="Nombre del Pokemon">
+                    </div>
+                </div>
 
+                <div class="input-group mb-3">
+                    <label class="col-sm-2" for="cbxRegionesId">Region:</label>
+                    <div class="col-sm-10">
+                    <select class="form-select" name="cbxRegiones" id ="cbxRegionesId">
+                        <option value ="Kanto">Kanto</option>
+                        <option value ="Jotho">Jotho</option>
+                        <option value ="Hoenn">Hoenn</option>
+                        <option value ="Sinnoh">Sinnoh</option>
+                        <option value ="Teselia">Teselia</option>
+                    </select>
+                    </div>
+                </div>
 
+                <div class="input-group mb-3">
+                    <label class="col-sm-2">Tipo:</label>
+                    <div class="col-sm-10">
+                        <input class="form-check-input" type="checkbox" id="chxPlanta" name="chxTipos[]"> <label class="form-check-label" for="chxPlanta">Planta</label> 
+                        <input class="form-check-input" type="checkbox" id="chxVeneno" name="chxTipos[]"> <label class="form-check-label" for="chxVeneno">Veneno</label> 
+                        <input class="form-check-input" type="checkbox" id="chxFuego" name="chxTipos[]"> <label class="form-check-label" for="chxFuego">Fuego</label> 
+                        <input class="form-check-input" type="checkbox" id="chxVolador" name="chxTipos[]"> <label class="form-check-label" for="chxVolador">Volador</label> 
+                        <input class="form-check-input" type="checkbox" id="chxAgua" name="chxTipos[]"> <label class="form-check-label" for="chxAgua">Agua</label> 
+                        <input class="form-check-input" type="checkbox" id="chxElectrico" name="chxTipos[]"> <label class="form-check-label" for="chxElectrico">Electrico</label> 
+                        <input class="form-check-input" type="checkbox" id="chxHada" name="chxTipos[]"> <label class="form-check-label" for="chxHada">Hada</label> 
+                        <input class="form-check-input" type="checkbox" id="chxBicho" name="chxTipos[]"> <label class="form-check-label"  for="chxBicho">Bicho</label> 
+                        <input class="form-check-input" type="checkbox" id="chxLucha" name="chxTipos[]"> <label class="form-check-label" for="chxLucha">Lucha</label> 
+                        <input type="checkbox" id="chxPsiquico" name="chxTipos[]"> <label class="form-check-label" for="chxPsiquico">Psiquico</label> 
 
-        <label for="cbxRegionesId">Region:</label>
-        <select name="cbxRegiones" id ="cbxRegionesId">
-            <option value ="Kanto">Kanto</option>
-            <option value ="Jotho">Jotho</option>
-            <option value ="Hoenn">Hoenn</option>
-            <option value ="Sinnoh">Sinnoh</option>
-            <option value ="Teselia">Teselia</option>
-        </select>
+                    </div>
+                </div>
 
-        <br>
-        <label>Tipo:</label>
+                <div class="input-group mb-3">
+                    <label class="col-sm-2" for="alturaId">Altura:</label>
+                    <div class="col-sm-9">
+                    <input class="form-control" type="Number" id="alturaId" min="1">
+                    </div>
+                    <span class="input-group-text col-sm-1 centerText">cm</span>
+                </div>
 
-        <label for="chxPlanta">Planta</label> <input type="checkbox" id="chxPlanta" name="chxTipos[]">
-        <label for="chxVeneno">Veneno</label> <input type="checkbox" id="chxVeneno" name="chxTipos[]">
-        <label for="chxFuego">Fuego</label> <input type="checkbox" id="chxFuego" name="chxTipos[]">
-        <label for="chxVolador">Volador</label> <input type="checkbox" id="chxVolador" name="chxTipos[]">
-        <label for="chxAgua">Agua</label> <input type="checkbox" id="chxAgua" name="chxTipos[]">
-        <label for="chxElectrico">Electrico</label> <input type="checkbox" id="chxElectrico" name="chxTipos[]">
-        <label for="chxHada">Hada</label> <input type="checkbox" id="chxHada" name="chxTipos[]">
-        <label for="chxBicho">Bicho</label> <input type="checkbox" id="chxBicho" name="chxTipos[]">
-        <label for="chxLucha">Lucha</label> <input type="checkbox" id="chxLucha" name="chxTipos[]">
-        <label for="chxPsiquico">Psiquico</label> <input type="checkbox" id="chxPsiquico" name="chxTipos[]">
+                <div class="input-group mb-3">
+                <label class="col-sm-2" for="pesoId">Peso:</label>           
+                    <div class="col-sm-9">
+                    <input class="form-control" type="Number" id="pesoId" min="0" step ="0.01" >            
+                    </div>
+                    <span class="input-group-text col-sm-1 centerText">kg</span>
+                </div>    
 
+                <div class="input-group mb-3">
+                    <label class="col-sm-2">Evolucion:</label>
+                    <div class="col-sm-10">
+                    <input class="form-check-input" type="radio" name="rbevoluciones" id="rbSense" checked> <label class="form-check-label" for="rbSense" >Sense evolució</label>
+                    <input class="form-check-input"  type="radio" name="rbevoluciones" id="rbPrimera" > <label class="form-check-label" for="rbPrimera">Primera evolución</label>
+                    <input class="form-check-input"  type="radio" name="rbevoluciones" id="rbOtras" > <label class="form-check-label" for="rbOtras">Otras evoluciones</label>
 
-        <br>
+                    </div>
+                </div>
 
-        <label for="alturaId">Altura:</label>
-        <input type="Number" id="alturaId" min="1"><br>
+                <div class="input-group mb-3">
+                    <label for="formFile" class="form-label col-sm-2">Imagen</label>
+                    <div class="col-sm-10">
+                    <input class="form-control" type="file" id="formFile">
+                    </div>
+                </div>
 
-        <label for="pesoId">Peso:</label>
-        <input type="Number" id="pesoId" min="0" step ="0.01" ><br>
+                <a href="#" class="btn btn-primary BotonDerecha">Aceptar</a>
+                <a href="../php_views/pokemon_list.php" class="btn btn-secondary BotonDerecha">Cancelar</a>
+            </form>
 
-        <label >Evolucion:</label>
-        <label for="rbSense">Sense evolució</label><input type="radio" name="rbevoluciones" id="rbSense" >
-        <label for="rbPrimera">Primera evolución</label><input type="radio" name="rbevoluciones" id="rbPrimera" >
-        <label for="rbOtras">Otras evoluciones</label><input type="radio" name="rbevoluciones" id="rbOtras" >
-
-
-        <br>
-
-        <label for="imagenId">Imagen:</label>
-        <input type="file" id="imagenId" ><br>
-
-        <button type="submit">Aceptar</button>
-        <a href="">Cancelar</a>
-    </form>
+        </div>
+    </div>
+</div>
 </body>
 </html> 
 
